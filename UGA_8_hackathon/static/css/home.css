@@ -1,0 +1,12 @@
+.form-control {
+    border: 0;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.b{
+    border-style: hidden
+}

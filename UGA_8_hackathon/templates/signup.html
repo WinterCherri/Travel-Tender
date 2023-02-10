@@ -1,0 +1,103 @@
+{% extends "base.html" %} 
+{% block content %}
+    <div class="container animate__animated animate__fadeInDown">
+        <div class="row">
+            <div class="col-md-50 b">
+                <div class="card b">
+                    <div class="card-body">
+                        <h1 class="text-center display-4 upper row-sm-3 " id="loginheader">Travel Tender With Friends To Your Next Destination</h1>
+                        <form class="form signupform animate__animated animate__fadeInUp" method="post" action="/add_user">
+                            <input class="txtbox" type="text" class="form-control" name="name" placeholder="Name"><br>
+                            <input class="txtbox" type="email" class="form-control" name="email" placeholder="Email"><br>
+                            <input class="txtbox" type="password" class="form-control" name="password"placeholder="Password"><br><br>
+                            <input type="submit" class="btnsignup btn-primary btn-block btn-lg" value="Sign Up">
+                        </form>
+                        <p class="mt-2 customness">Already a member? <a href="/login">Login Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+    body{
+        background-color: #064C72;
+    }
+    .container{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .card, b{
+        background-color: #064C72;
+        border: none;
+    }
+    .form{
+        border: none;
+    }
+    .container{
+        border: none;
+        border-color: #064C72;
+    }
+    .signupform{
+        border: none;
+    }
+    .row{
+        border: none;
+    }
+    .container{
+        border: none;
+    }
+    .no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+    .txtbox{
+        width: 500px;
+        padding: 16px 32px;
+        border-radius: 8px;
+        border: none;
+        margin-left: 30%;
+        margin-top: 2%;
+    }
+    .card-body{
+        background: rgb(164,200,180);
+background: linear-gradient(165deg, rgba(164,200,180,1) 5%, rgba(194,235,212,0.8512197115174195) 100%, rgba(2,0,36,1) 041798%);
+        border-radius: 40px;
+    }
+    .btnsignup{
+        background: rgb(255,89,68);
+background: linear-gradient(165deg, rgba(255,89,68,1) 5%, rgba(233,49,26,1) 100%, rgba(2,0,36,1) 041798%);
+        text-decoration: none;
+        border: none;
+        font-size: 24px;
+        border-radius: 8px;
+        box-shadow: 0px 6px 18px rgba(107, 59, 0, 0.25);
+        margin-left: 30%;
+        width: 500px;
+        color: #f2f2f2;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .customness{
+        margin-left: 30%;
+        margin-bottom: 100px;
+        color:#f2f2f2   
+    }
+    #loginheader{
+        margin-top: 50px;
+        font-weight: 400;
+        color: #f2f2f2;
+        margin-bottom: 50px;
+    }
+    .btnsignup:hover{
+        background-color: #d22c17;
+        cursor: pointer;
+        transform: scale(1.15);
+        transition: 0.2s;
+}
+    :root {
+  --animate-duration: 2000ms;
+  --animate-delay: 1s;
+}
+
+</style>
+{% endblock %}

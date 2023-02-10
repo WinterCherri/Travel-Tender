@@ -1,0 +1,77 @@
+
+
+{% extends "base.html" %} 
+{% block content %}
+
+<div class="container animate__animated animate__fadeInLeft ">
+    <h1 class="text-center display-2 upper row-sm-3 animate__animated animate__fadeInDown" id="loginheader">Travel Tender With Friends To Your Next Destination</h1>
+
+    <div class="text-center lower row-sm-3 animate__animated animate__fadeInUp">
+        <div class="btn-group btn-group-vertical">
+            <button class="btn btn-color btn-lg text-light btn-primary" id="createacc">
+                <a href="/signup" class = "account text-decoration-none" >Create an Account</a>
+            </button>
+            <button class="btn">
+                <a href="/login" class="text-decoration-none" id="login">Login</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    body{
+        background-color: #064C72;
+        transition: 2s;
+    }
+    .account {
+        color: white
+    }
+    .container{
+        margin-top:5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(164,200,180);
+background: linear-gradient(165deg, rgba(164,200,180,1) 5%, rgba(194,235,212,0.8512197115174195) 100%, rgba(2,0,36,1) 041798%);
+        border-radius: 40px;
+        gap:32px;
+        padding-left: 75px;
+        padding-right: 75px;
+
+    }
+    #loginheader{
+        margin-top: 100px;
+        font-weight: 400;
+        color: #f2f2f2
+    }
+    .btn-group{
+        margin-top: 5%;
+        padding-bottom: 200px;
+    }
+    #createacc{
+        background: rgb(255,89,68);
+background: linear-gradient(165deg, rgba(255,89,68,1) 5%, rgba(233,49,26,1) 100%, rgba(2,0,36,1) 041798%);
+        text-decoration: none;
+        border: none;
+        font-size: 24px;
+        border-radius: 8px;
+        box-shadow: 0px 6px 18px rgba(107, 59, 0, 0.25);
+    }
+    #login{
+        color: #f2f2f2;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .btn-color:hover{
+        background-color: #d22c17;
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.2s;
+    
+}
+:root {
+  --animate-duration: 2000ms;
+  --animate-delay: 1s;
+}
+</style>
+{% endblock %}
